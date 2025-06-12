@@ -1,0 +1,31 @@
+.dualBanner {
+    background-color: #1e9dba;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    justify-items: end;
+    text-align: end;
+}
+
+.dualBanner img {
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dualBanner h1 {
+    padding: 64px;
+    max-width: 550px;
+    font-size: 32px;
+}
+
+@media (max-width: 600px) {
+    .dualBanner {
+        grid-template-columns: 1fr;
+    }
+
+    .dualBanner img {
+        height: 350px;
+    }
+}

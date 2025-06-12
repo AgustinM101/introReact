@@ -1,0 +1,32 @@
+header {
+    border-bottom: 2px solid #cccccc;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #5d6ba9;
+}
+
+header .container nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+@media (max-width: 850px) {
+    header .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    header .container nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}

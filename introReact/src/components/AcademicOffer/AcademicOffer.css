@@ -1,0 +1,32 @@
+.academicOffer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+}
+
+.academicOffer h2 {
+    text-align: center;
+}
+
+.academicOffer .grid {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 12px;
+}
+
+.academicOffer .grid a {
+    display: block;
+    background-color: #1e9dba;
+    color: white;
+    padding: 16px 18px;
+    border-radius: 32px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.academicOffer .grid a:hover {
+    background-color: #007a96;
+}
