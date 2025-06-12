@@ -1,22 +1,39 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [state, setState] = useState([])
+
+  async function fetchData() {
+    const response = await fetch('https://programacioniii.vercel.app/api/v2/usuario/oferta-academica')// cambiar link de localhost
+    const data = await response.json()
+    setState(data)
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
 
   return (
     <>
+    {
+      state.length == 0 ? <p>Cargando...</p> : 
+      <div>
+        {
+          state.map((item) => {
+            return <TarjetaUniversitaria key={item.id} item={item} />
+          })
+        }
+        
 
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
+
+
+
+    }
+
 
     </>
   )
