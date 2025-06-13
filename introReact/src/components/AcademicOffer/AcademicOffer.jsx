@@ -24,9 +24,9 @@ export function AcademicOffer() {
                 <div className="grid">
                     {offers ? (
                         offers.map((offer) => (
-                            <a key={"AcademicOffer-" + offer.id} href=""> 
+                            <Link key={"AcademicOffer-" + offer.id} href={"/ofertas"+offer.id}> 
                                 {offer.nombre}
-                            </a>
+                            </Link>
                         )) /* Siempre que recorremos arreglo darle un id */
                     ) : (
                         <p>Cargando...</p>

@@ -25,12 +25,12 @@ export function Universities() {
                 <div className="grid">
                     {universities ? (
                         universities.map((university) => (
-                            <a key={"University-" + university.id} href="">
+                            <Link key={"University-" + university.id} href={`/universidades/${university.id}`}>
                                 <UniversityCard
                                     name={university.nombre}
                                     fullName={university.nombreCompleto}
                                 />
-                            </a>
+                            </Link>
                         ))
                     ) : (
                         <p>Cargando...</p>
