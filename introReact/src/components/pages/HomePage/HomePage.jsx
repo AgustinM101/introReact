@@ -1,8 +1,7 @@
 import "./Homepage.css";
 import { Header } from "../../Header/Header";
-import { AcademicOffer } from "../../AcademicOffer/AcademicOffer";
 import { Banner } from "../../Banner/Banner";
-import { Universities } from "../../Universities/Universities";
+import { Articles } from "../../Articles/Articles";
 import { DualBanner } from "../../DualBanner/DualBanner";
 import { Footer } from "../../Footer/Footer";
 
@@ -13,7 +12,7 @@ function HomePage() {
         <>
             <Header />
 
-            <AcademicOffer />
+           
 
             <Banner
                 image="images/Banner1.jpg"
@@ -22,7 +21,7 @@ function HomePage() {
 
 
 
-            <Universities />
+            <Articles />
 
             <Banner image="images/Banner2.jpg" title="Más de 15 años juntos" />
 

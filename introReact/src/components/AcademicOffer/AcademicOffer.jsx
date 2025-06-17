@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./AcademicOffer.css";
 import { useEffect, useState } from "react";
 
@@ -24,7 +25,7 @@ export function AcademicOffer() {
                 <div className="grid">
                     {offers ? (
                         offers.map((offer) => (
-                            <Link key={"AcademicOffer-" + offer.id} href={"/ofertas"+offer.id}> 
+                            <Link key={"AcademicOffer-" + offer.id} to={"/ofertas"+offer.id}> 
                                 {offer.nombre}
                             </Link>
                         )) /* Siempre que recorremos arreglo darle un id */

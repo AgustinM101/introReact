@@ -1,10 +1,9 @@
 import "./App.css";
 import HomePage from "./components/pages/HomePage/HomePage.jsx";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import OfferPage from "./components/pages/OfferPage/OfferPage.jsx";
-import Header from "./components/Header/Header.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import UniversityPage from "./components/pages/UniversityPage/UniversityPage.jsx";
+import ArticlePage from "./components/pages/ArticlePage/ArticlePage.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
+import { Header } from "./components/Header/Header.jsx";
 
 function App() {
     return (
@@ -16,8 +15,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/ofertas/:id" element={<OfferPage/>} />
-          <Route path="/universidades" element={<UniversityPage/>} />
+          <Route path="/articles" element={<ArticlePage/>} />
  
         </Routes>
 

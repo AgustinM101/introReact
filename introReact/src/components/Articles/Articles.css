@@ -1,25 +1,25 @@
-.universities .container {
+.articles .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 64px;
 }
 
-.universities h2 {
+.articles h2 {
     text-align: center;
 }
 
-.universities .grid {
+.articles .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     justify-items: center;
     gap: 16px;
 }
 
-.universities .grid a {
+.articles .grid a {
     transition: 0.3s ease;
 }
 
-.universities .grid a:hover {
+.articles .grid a:hover {
     transform: scale(1.02);
 }
