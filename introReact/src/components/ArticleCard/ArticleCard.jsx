@@ -1,5 +1,6 @@
 import "./ArticleCard.css";
 
+
 export function ArticleCard({ name, description, price }) {
     return (
         <figure className="articleCard">
