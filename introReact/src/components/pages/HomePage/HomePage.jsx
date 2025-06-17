@@ -1,36 +1,43 @@
+import { useEffect, useState } from "react";
 import "./Homepage.css";
-import { Header } from "../../Header/Header";
-import { Banner } from "../../Banner/Banner";
-import { Articles } from "../../Articles/Articles";
-import { DualBanner } from "../../DualBanner/DualBanner";
-import { Footer } from "../../Footer/Footer";
-
+import { ArticleCard } from "../../ArticleCard/ArticleCard";
 
 
 function HomePage() {
+
+     const [articles, setArticles] = useState(undefined);
+    
+        async function getArticles() {
+            const response = await fetch(
+                "http://localhost:9091/articles"
+            );
+            const data = await response.json();
+            console.log(data);
+            setArticles(data);
+        }
+    
+        useEffect(() => {
+            getArticles();
+        }, []);
+    
     return (
         <>
-            <Header />
 
+        {
+            articles ? articles.map((article) => (
+                     <ArticleCard
+                        name={article.name}
+                        description={article.description}
+                        price={article.price}
+                        key={"Article-" + article.id}
+                    />
+                                    ))
+            
+             : <p>Cargando...</p>
+        }
+        
+        
            
-
-            <Banner
-                image="images/Banner1.jpg"
-                title="Comenzá tu camino universitario"
-            />
-
-
-
-            <Articles />
-
-            <Banner image="images/Banner2.jpg" title="Más de 15 años juntos" />
-
-            <DualBanner
-                image="images/Banner3.jpg"
-                title='"El conocimiento es el único bien que aumenta cuando se comparte" Aristóteles'
-            />
-
-            <Footer />
         </>
     );
 }

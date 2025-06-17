@@ -9,10 +9,13 @@ export function Header() {
                 </a>
 
                 <nav>
-                    <a href="">CARRERAS</a>
-                    <a href="">UNIVERSIDADES</a>
-                    <a href="">INSTITUCIONAL</a>
-                    <a href="">NOTICIAS</a>
+                    <a href="/">INICIO</a>
+
+                    <a href="/category">CATEGORIAS</a>    
+
+                    <a href="">MARCAS</a>
+
+
                 </nav>
             </div>
         </header>
