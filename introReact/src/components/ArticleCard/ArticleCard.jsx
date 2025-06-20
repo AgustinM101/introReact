@@ -12,6 +12,7 @@ export function ArticleCard({ article }) {
                 <p className="price">${article.price}</p>
 
             </div>
+
         </figure>
     );
 }
