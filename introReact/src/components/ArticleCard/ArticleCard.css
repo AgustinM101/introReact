@@ -1,37 +1,21 @@
-.articlesCard {
+.articleCard {
     width: 100%;
-    max-width: 250px;
-    aspect-ratio: 1/1;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-wrap: balance;
-
-    background-color: #1e73be;
-    color: white;
-    padding: 24px;
-    border-radius: 16px;
-    gap: 12px;
-
-    position: relative;
+    gap: 16px;
 }
 
-.articlesCard::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
+.articleCard p {
+    margin: 0;
+    padding: 0;
+}
 
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 64px 64px 0;
-    border-color: transparent #1e9dba transparent transparent;
-    background-color: #0b5fa3;
+.articleCard img {
+    border-radius: 16px;
+}
 
-    border-top-right-radius: inherit;
-    border-bottom-left-radius: inherit;
+.articleCard .price {
+    font-size: 28px;
+    font-weight: 600;
 }

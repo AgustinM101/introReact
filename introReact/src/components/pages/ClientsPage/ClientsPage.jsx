@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import "./Homepage.css";
+import "./ClientsPage.css";
 import { ArticleCard } from "../../ArticleCard/ArticleCard";
 import { Banner } from "../../Banner/Banner";
 
 
-function HomePage() {
+function ClientsPage() {
 
     const [articles, setArticles] = useState(undefined);
     
@@ -24,10 +24,10 @@ function HomePage() {
     return (
         <main>
 
-            <Banner image={"https://i.pinimg.com/originals/76/9d/a3/769da3a75062dd7891fd3a7541f2596e.jpg"}  />
+            <Banner image={"https://blog.atacadao.com.br/wp-content/uploads/2022/02/Como-atender-melhor-os-seus-clientes.jpg"}  />
         
         <div  className="container">
-            <h1>Los productos más vendidos</h1>
+            <h1>Los clientes que más compran</h1>
             {
             articles ? <div className="articlesGrid">
                 {
@@ -41,4 +41,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
+export default ClientsPage;

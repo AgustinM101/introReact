@@ -5,15 +5,15 @@ export function Header() {
         <header>
             <div className="container">
                 <a href="">
-                    <img src="images/Logo.png" alt="Logo CUCH" />
+                    <img className="logo-crearte" src="https://th.bing.com/th/id/R.981f8b33fd734a335e848783f7e15cca?rik=DAQASHTKUUrGJA&pid=ImgRaw&r=0" alt="Logo Marca Crearte" />
                 </a>
 
                 <nav>
                     <a href="/">INICIO</a>
 
-                    <a href="/category">CATEGORIAS</a>    
+                    <a href="/clients">CLIENTES</a>    
 
-                    <a href="">MARCAS</a>
+                    <a href="/brands">MARCAS</a>
 
 
                 </nav>
