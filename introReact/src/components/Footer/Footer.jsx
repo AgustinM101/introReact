@@ -5,8 +5,36 @@ export function Footer() {
             <div className="container">
                 <div className="top">
                     <div className="column">
+                        <section className="beneficios">
+                            <h2>Beneficios</h2>
+                            <div className="beneficios-list">
+                                <div>
+                                    <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750798722/dolar-de-saco_xi9dvv.png" alt="signo pesos" />
+                                    <strong>
+                                        Precio Justo
+                                    </strong>
+                                </div>
+                                <div>
+                                    <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750798721/comprobacion-de-candado_jt36rd.png" alt="candado seguro" />
+                                    <strong>
+                                        Compra Segura
+                                    </strong>
+                                </div>
+                                <div>
+                                    <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750798847/envio-rapido_ucojnb.png" alt="envio imagen" />
+                                    <strong>
+                                        Envío Rápido
+                                    </strong>
+                                </div>
+                            </div>
+                            
+                        </section>
+                    </div>
+                    
+                    <div className="column">
                         <h2>Quienes Somos</h2>
-                        <p>
+                        <div className="quienes-somos">
+                            <p>
                             Crearte es un emprendimiento dedicado a la venta de articulos artesanales y manualidades.
                         </p>
                         <p>
@@ -16,6 +44,8 @@ export function Footer() {
 
 
                         </p>
+                        </div>
+                        
                     </div>
                     <div className="column">
                         <h2>Contacto</h2>

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Homepage.css";
 import { ArticleCard } from "../../ArticleCard/ArticleCard";
 import { Banner } from "../../Banner/Banner";
+import { Categories } from "../../Categories/Categories";
 
 
 function HomePage() {
@@ -27,15 +28,17 @@ function HomePage() {
             <Banner image={"https://i.pinimg.com/originals/76/9d/a3/769da3a75062dd7891fd3a7541f2596e.jpg"}  />
         
         <div  className="container">
-            <h1>Los productos más vendidos</h1>
+            <h1>Nuestros Productos</h1>
             {
-            articles ? <div className="articlesGrid">
-                {
-                    articles.map((article) => <ArticleCard article={article} />)
-                }
-            </div> : <p>Cargando...</p>
-        }
+                articles ? <div className="articlesGrid">
+                    {
+                        articles.map((article) => <ArticleCard article={article} />)
+                    }
+                </div> : <p>Cargando...</p>
+            }
         </div>
+
+            <Categories />
         
         </main>
     );

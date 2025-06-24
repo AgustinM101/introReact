@@ -31,6 +31,8 @@ export function Articles() {
                                     name={article.name}
                                     description={article.description}
                                     price={article.price}
+                                    stock={article.stock}
+                                    imageUrl={article.imageUrl}
                                 />
                             </Link>
                         ))
