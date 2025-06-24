@@ -1,0 +1,18 @@
+.brandCard img {
+    width: 200px;
+    height: 200px;
+}
+.brandsGrid  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 16px;
+}
+.brandCard div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

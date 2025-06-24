@@ -9,7 +9,7 @@ header .container {
     gap: 32px;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: #5d6ba9;
+    color: #010102;
 }
 
 header .container nav {
@@ -17,10 +17,18 @@ header .container nav {
     justify-content: flex-end;
     gap: 16px;
 }
+header .container nav a:hover {
+    color: #ff6347; 
+
+}
 
 .logo-crearte{
     width: 100px;
     height: 100px;
+}
+.logo-crearte:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 @media (max-width: 850px) {

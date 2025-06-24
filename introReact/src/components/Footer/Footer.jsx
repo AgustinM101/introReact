@@ -5,58 +5,52 @@ export function Footer() {
             <div className="container">
                 <div className="top">
                     <div className="column">
-                        <h2>CUCH</h2>
+                        <h2>Quienes Somos</h2>
                         <p>
-                            El Centro Universitario de Chivilcoy es una
-                            institución municipal que permite cursar estudios
-                            superiores y cursos de extensión universitaria de
-                            manera gratuita bajo el respaldo de las
-                            universidades más prestigiosas del país.
+                            Crearte es un emprendimiento dedicado a la venta de articulos artesanales y manualidades.
+                        </p>
+                        <p>
+                            En Crearte diseñamos y vendemos artículos artesanales hechos con dedicación: vasos, platos y tablas de madera
+                            que combinan funcionalidad y calidez. Valoramos el trabajo manual, los materiales nobles y el vínculo con cada cliente. 
+                            Apostamos al crecimiento junto a marcas amigas y quienes nos eligen.
+
+
                         </p>
                     </div>
-
-                    <div className="column">
-                        <h2>Links</h2>
-                        <nav>
-                            <a href="">Inscripción</a>
-                            <a href="">Universidades</a>
-                            <a href="">El CUCH</a>
-                            <a href="">Consultas</a>
-                        </nav>
-                    </div>
-
                     <div className="column">
                         <h2>Contacto</h2>
-
-                        <p>
-                            <strong>Dirección:</strong>
-                            <br />
-                            Av. C. Calderón 424
-                            <br />
-                            Chivilcoy, Buenos Aires
-                            <br />
-                            <a
-                                href="https://maps.app.goo.gl/5bLMUB2b7Mj9uJYo8"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Ver en el mapa
-                            </a>
-                        </p>
-
-                        <p>
-                            <strong>Correo electrónico:</strong>
-                            <br />
-                            <a href="mailto:ejemplo@cuch.gob.ar">
-                                ejemplo@cuch.gob.ar
-                            </a>
-                        </p>
-
-                        <p>
-                            <strong>Teléfono:</strong>
-                            <br />
-                            <a href="tel:+542346432493">+54 (2346) 43 2493</a>
-                        </p>
+                        <div className="redes">
+                          
+                                
+                                <p>
+                                    <a  className="map-link"
+                                        href="https://maps.app.goo.gl/5bLMUB2b7Mj9uJYo8"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750627575/ubicaciones_qba6vm.png" alt="imagen de google maps" />
+                                    </a>
+                                </p>
+                           
+                            
+                                
+                                <p>
+                                    
+                                    <a href="mailto:ejemplo@crearte.ar">
+                                        <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750629571/sobre_fpxymv.png" alt="gmail logo" />
+                                    </a>
+                                </p>
+                           
+                           
+                                <p>
+                                    
+                                    <br />
+                                    <a href="tel:+542346432493">
+                                        <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750629571/telefono_izhk9x.png" alt="telofono logo" />
+                                    </a>
+                                </p>
+                            
+                        </div>
                     </div>
                 </div>
 
@@ -65,20 +59,20 @@ export function Footer() {
                 <div className="bottom">
                     <p>© Copyright 2025. Todos los Derechos Reservados</p>
 
-                    <nav>
+                    <nav className="social">
                         <a
-                            href="https://www.instagram.com/cuchchivilcoy/"
+                            href="https://www.instagram.com/creartechivilcoy/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Instagram
+                            <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750627855/logotipo-de-instagram_pwyzep.png" alt="logo instagram" />
                         </a>
                         <a
                             href="https://www.youtube.com/channel/UCr5qd1wXSfgPLJRfpXNLZsw?view_as=subscriber"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            YouTube
+                            <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750627855/youtube_1_hqpner.png" alt="logo youtube" />
                         </a>
                     </nav>
                 </div>

@@ -1,30 +1,53 @@
 footer {
-    background-color: #1e73be;
-    color: white;
+    background-color: #f8730d;
+    color: black;
+    
 }
 
 footer .container {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
 }
 
 footer .container .top {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
 }
 
 footer .column {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    max-width: 600px;
     gap: 16px;
 }
-
+.column p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+}
 footer a {
     display: block;
 }
-
+.column p a img {
+    width: 32px;
+    height: 32px;
+    border-radius: 30px;
+}
+.column p a img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #ff9900;
+    border-radius: 10px;
+}
 footer .bottom {
     display: flex;
     justify-content: space-between;
@@ -37,9 +60,34 @@ footer .bottom nav {
     display: flex;
     gap: 12px;
 }
+.social a img {
+    width: 22px;
+    height: 22px;
+}
+.social a img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #ff9900;
+    border-radius: 10px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    gap: 16px;
+
+}
+.redes p{
+    margin: 10px;
+}
+
+
+
 
 footer .bottom a {
-    background-color: white;
+    
     color: black;
     padding: 10px 16px;
     border-radius: 24px;

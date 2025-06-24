@@ -1,24 +1,25 @@
 import { useEffect, useState } from "react";
-import "./ClientsPage.css";
-import { ArticleCard } from "../../ArticleCard/ArticleCard";
+
+
 import { Banner } from "../../Banner/Banner";
+import { ClientCard } from "../../ClientCard/ClientCard";
 
 
 function ClientsPage() {
 
-    const [articles, setArticles] = useState(undefined);
+    const [clients, setClients] = useState(undefined);
     
-        async function getArticles() {
+        async function getClients() {
             const response = await fetch(
-                "http://localhost:9091/articles"
+                "http://localhost:9091/clients"
             );
             const data = await response.json();
             console.log(data);
-            setArticles(data);
+            setClients(data);
         }
     
         useEffect(() => {
-            getArticles();
+            getClients();
         }, []);
     
     return (
@@ -29,9 +30,9 @@ function ClientsPage() {
         <div  className="container">
             <h1>Los clientes que más compran</h1>
             {
-            articles ? <div className="articlesGrid">
+            clients ? <div className="clientsGrid">
                 {
-                    articles.map((article) => <ArticleCard article={article} />)
+                    clients.map((client) => <ClientCard client={client} />)
                 }
             </div> : <p>Cargando...</p>
         }

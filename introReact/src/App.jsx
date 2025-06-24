@@ -5,6 +5,7 @@ import ArticlePage from "./components/pages/ArticlePage/ArticlePage.jsx";
 import { Footer } from "./components/Footer/Footer.jsx";
 import { Header } from "./components/Header/Header.jsx";
 import ClientsPage from "./components/pages/ClientsPage/ClientsPage.jsx";
+import BrandPage from "./components/pages/BrandPage/BrandPage.jsx";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/articles" element={<ArticlePage/>} />
           <Route path="/clients" element={<ClientsPage/>} />
+          <Route path="/brands" element={<BrandPage/>} />
  
         </Routes>
 
