@@ -24,9 +24,9 @@ function HomePage() {
     
     return (
         <main>
-
+            
             <Banner image={"https://i.pinimg.com/originals/76/9d/a3/769da3a75062dd7891fd3a7541f2596e.jpg"}  />
-        
+            <Categories />
         <div  className="container">
             <h1>Nuestros Productos</h1>
             {
@@ -38,7 +38,7 @@ function HomePage() {
             }
         </div>
 
-            <Categories />
+            
         
         </main>
     );

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Banner } from '../../Banner/Banner';
 
-function ArticlePage() {
+
+
+ function ArticlePage() {
     const params = useParams();
     const id = params.id;
 
@@ -20,12 +21,18 @@ function ArticlePage() {
         getArticle(id);
     }, [id])
 
-  return article ? 
-  <>
-    <p>{article.description}</p>
-    <p>{article.price}</p>
-
-  </>
+  return article ? (
+        <section >
+            <img src={article.imageUrl} alt={"imagen de articulo " + article.name} className="card-img-top" />
+            <div className="contenido" >
+                <p>{article.description}</p>
+                <p style={{color: "green"}}> {Math.random() > 0.5 ? "Envio gratis" : "6 cuotas sin interes" } </p>
+                <p className="price">${article.price}</p>
+                <p>Stock: {article.stock}</p>
+                
+            </div>
+        </section>
+      )
   
   : <p>Cargando...</p>;
 }

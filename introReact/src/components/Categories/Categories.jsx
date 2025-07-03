@@ -15,6 +15,7 @@ export function Categories() {
                 </div>
                 <div>
                     <img src="https://res.cloudinary.com/dkv58dvqy/image/upload/v1750795909/tabla-cocina-para-picar-D_NQ_NP_660090-MLM25728906139_072017-F_g3o4o9.jpg" alt="tablas de madera fondo blanco" />
+                    
                     <strong>Tablas</strong>
                 </div>
             </div>
