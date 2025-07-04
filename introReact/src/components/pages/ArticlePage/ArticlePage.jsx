@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './ArticlePage.css';
 
 
 
@@ -22,12 +23,11 @@ import { useParams } from 'react-router-dom';
     }, [id])
 
   return article ? (
-        <section >
+        <section className="article-detalle">
             <img src={article.imageUrl} alt={"imagen de articulo " + article.name} className="card-img-top" />
             <div className="contenido" >
                 <p>{article.description}</p>
-                <p style={{color: "green"}}> {Math.random() > 0.5 ? "Envio gratis" : "6 cuotas sin interes" } </p>
-                <p className="price">${article.price}</p>
+                <h3 className="price">${article.price}</h3>
                 <p>Stock: {article.stock}</p>
                 
             </div>

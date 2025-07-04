@@ -1,0 +1,23 @@
+.article-detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.article-detalle img {
+    max-width: fit-content;
+    height: auto;
+    border-radius: 8px;
+}
+.article-detalle .contenido {
+    text-align: center;
+    margin-top: 20px;
+
+}
+.article-detalle .contenido p {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+    max-width: fit-content;
+}
+

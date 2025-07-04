@@ -10,12 +10,23 @@ function HomePage() {
     const [articles, setArticles] = useState(undefined);
     
         async function getArticles() {
-            const response = await fetch(
+            const res = await fetch(
                 "http://localhost:9091/articles"
             );
-            const data = await response.json();
-            console.log(data);
+            
+            if (!res.ok) {
+                throw new Error(`Error HTTP: ${res.status}`);
+            }
+
+            const text = await res.text();
+
+            try {
+            const data = JSON.parse(text);
             setArticles(data);
+            } catch (err) {
+            console.error("No se pudo parsear JSON:", err);
+            console.log("Respuesta recibida:", text);
+            }
         }
     
         useEffect(() => {
